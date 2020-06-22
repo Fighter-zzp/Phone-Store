@@ -1,0 +1,29 @@
+server:
+  port: 8181
+spring:
+  application:
+    name: phone-backstage
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/review_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+mybatis:
+  type-aliases-package: com.zzp.phone.stage.domain
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    com.zzp.phone.stage.mapper: debug
+

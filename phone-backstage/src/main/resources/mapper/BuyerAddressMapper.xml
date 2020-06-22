@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzp.phone.stage.mapper.BuyerAddressMapper">
+  <resultMap id="BaseResultMap" type="com.zzp.phone.stage.domain.BuyerAddress">
+    <!--@mbg.generated generated on Mon May 25 20:50:42 CST 2020.-->
+    <!--@Table buyer_address-->
+    <id column="address_id" jdbcType="INTEGER" property="addressId" />
+    <result column="buyer_name" jdbcType="VARCHAR" property="buyerName" />
+    <result column="buyer_phone" jdbcType="VARCHAR" property="buyerPhone" />
+    <result column="buyer_address" jdbcType="VARCHAR" property="buyerAddress" />
+    <result column="area_code" jdbcType="VARCHAR" property="areaCode" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon May 25 20:50:42 CST 2020.-->
+    address_id, buyer_name, buyer_phone, buyer_address, area_code, update_time, create_time
+  </sql>
+</mapper>

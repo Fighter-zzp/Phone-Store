@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzp.phone.stage.mapper.PhoneSpecsMapper">
+  <resultMap id="BaseResultMap" type="com.zzp.phone.stage.domain.PhoneSpecs">
+    <!--@mbg.generated generated on Mon May 25 20:55:38 CST 2020.-->
+    <!--@Table phone_specs-->
+    <id column="specs_id" jdbcType="INTEGER" property="specsId" />
+    <result column="phone_id" jdbcType="VARCHAR" property="phoneId" />
+    <result column="specs_name" jdbcType="VARCHAR" property="specsName" />
+    <result column="specs_stock" jdbcType="INTEGER" property="specsStock" />
+    <result column="specs_price" jdbcType="DECIMAL" property="specsPrice" />
+    <result column="specs_icon" jdbcType="VARCHAR" property="specsIcon" />
+    <result column="specs_preview" jdbcType="VARCHAR" property="specsPreview" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon May 25 20:55:38 CST 2020.-->
+    specs_id, phone_id, specs_name, specs_stock, specs_price, specs_icon, specs_preview, 
+    update_time, create_time
+  </sql>
+</mapper>
